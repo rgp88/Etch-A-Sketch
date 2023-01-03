@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+}
+
+input {
+    width: 150px;
+    margin-top: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+
+.grid {
+    
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border-style: solid;
+
+}
+
+.genDiv {
+    border-style:ridge ;
+    border-width: 1px;
+}
