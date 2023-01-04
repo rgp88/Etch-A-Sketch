@@ -8,11 +8,7 @@ input {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 1em;
-    flex-direction: column;
 }
 
 
@@ -26,6 +22,14 @@ main {
 }
 
 .genDiv {
-    border-style:ridge ;
+    border-style:ridge;
     border-width: 1px;
+}
+
+
+.parentGrid {
+    display: flex;
+    justify-content: center ;
+    margin-top: 50px;
+
 }
