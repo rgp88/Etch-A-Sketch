@@ -25,16 +25,18 @@ mySubmit.addEventListener('click', ()=> {
         genDiv.id = 'genDiv'+j;
         genDiv.className = 'genDiv newDiv';
         grid.appendChild(genDiv);
-
-        genDiv.addEventListener('mousemove', (e)=> {
-            if (e.buttons == 1) {
-            genDiv.style.backgroundColor=myColor.value;
-            console.log(e);
-            } 
-        });
     }
 
     grid.style.setProperty('grid-template-columns', 'repeat('+numri+', 1fr)');
+
+    for(let j=0;j<=divs.length-1;j++) {
+    divs[j].addEventListener('mousemove', (e)=> {
+        if (e.buttons == 1) {
+        divs[j].style.backgroundColor=myColor.value;
+        console.log(e);
+        } 
+    })
+    };
 
 });
 
